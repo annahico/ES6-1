@@ -6,7 +6,7 @@ class Tarea {
         this.fecha = new Date();
     }
 
-    fechaHoy() {  
+    fechaHoy() {
         this.fecha = new Date();
     }
 
