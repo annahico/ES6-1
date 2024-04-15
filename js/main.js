@@ -30,5 +30,15 @@ class Tarea {
 let tarea1 = new Tarea("Comprar leche", 1); //los parentesis hacen referencia al constructor
 let tarea2 = new Tarea("Comprar huevos", 2);
 
-console.log(tarea1);
+tarea1.mostrarFecha();
+tarea1.fechaHoy();
+
+setTimeout(() => {
+    tarea1.fechaHoy();
+    console.log(tarea1);
+}, 2000);
+
 console.log(tarea2);
+
+console.log(typeof tarea1);
+console.log(tarea1 instanceof Tarea);
