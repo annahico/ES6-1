@@ -1,5 +1,5 @@
 class Padre {
-    cosntructos(){
+    cosntructor(){
         console.log("Hola desde el constructor del padre");
     }
 }
