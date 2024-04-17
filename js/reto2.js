@@ -4,14 +4,15 @@
 //         this.contraseña = contraseña;
 //     }
 
-const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+const CARACTERES = 
+'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+const generateRandomIntegrer = (min, max) =>
+ (Math.floor() * (max - min) + min);
 
 console.log(caracteres.length);
 console.log(caracteres.charAt(2));
-
-Jk08nDvX
-
-0 6 8 19 66 3
 
 minimoIndice = 0
 maximoIndice = caracteres.length -1
