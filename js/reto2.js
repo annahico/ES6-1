@@ -6,7 +6,7 @@ const generateRandomIntegrer = (min, max) =>
 
 const PASSWORD_LENGTH = 8;
 
-//CLASS DEFINITION
+//class definition
 class Password {
     constructor(length = PASSWORD_LENGTH) {
         this.length = length;
@@ -14,16 +14,16 @@ class Password {
     }
 
     generate() {
-        let password = "";
-        for (let i = 0; i < this.length; i++) { //asi creamos el bucle
+        let password = ""; //no se pone nada entre "" porque no hay una contraseña
+        for (let i = 0; i < this.length; i++) { //asi creamos el bucle para las dos linias de debajo
             let RandomIndex = generateRandomIntegrer(0, CHARACTERES.length - 1); //total de caracteres disponibles
             let randomCharacter = CHARACTERES.chartAt(RandomIndex);
-            password += randomCharacter;
+            password += randomCharacter; //aqui se acumula
         }
-        return password;
+        return password; //devlvemos la contraseña
     }
 }
 
-let password = new Password();//entre parentesis ponemos los caracteres de la contraseña
+let password = new Password();//entre parentesis ponemos los caracteres de la contraseña que queremos que genere
 console.log(password.password);
 
