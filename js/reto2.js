@@ -1,18 +1,29 @@
-// class Password {
-//     constructor(longitud, contraseña){
-//         this.longitud = longitud;
-//         this.contraseña = contraseña;
-//     }
-
-
-const CARACTERES = 
-'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const CHARACTERES =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 const generateRandomIntegrer = (min, max) =>
- (Math.floor() * (max - min) + min);
+    (Math.floor() * (max - min) + min);
 
-console.log(caracteres.length);
-console.log(caracteres.charAt(2));
+const PASSWORD_LENGTH = 8;
 
-minimoIndice = 0
-maximoIndice = caracteres.length -1
+//CLASS DEFINITION
+class Password {
+    constructor(length = PASSWORD_LENGTH) {
+        this.length = length;
+        this.password = this.generate();
+    }
+
+    generate() {
+        let password = "";
+        for (let i = 0; i < this.length; i++) { //asi creamos el bucle
+            let index = generateRandomIntegrer(0, CHARACTERES.length - 1); //total de caracteres disponibles
+            let randomCharacter = CHARACTERES.chartAt(RandomIndex);
+            password += randomCharacter;
+        }
+        return password;
+    }
+}
+
+let password = new Password();//entre parentesis ponemos los caracteres de la contraseña
+console.log(password.password);
+
