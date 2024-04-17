@@ -16,7 +16,7 @@ class Password {
     generate() {
         let password = "";
         for (let i = 0; i < this.length; i++) { //asi creamos el bucle
-            let index = generateRandomIntegrer(0, CHARACTERES.length - 1); //total de caracteres disponibles
+            let RandomIndex = generateRandomIntegrer(0, CHARACTERES.length - 1); //total de caracteres disponibles
             let randomCharacter = CHARACTERES.chartAt(RandomIndex);
             password += randomCharacter;
         }
